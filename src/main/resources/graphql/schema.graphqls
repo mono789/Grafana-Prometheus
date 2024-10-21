@@ -1,0 +1,51 @@
+type Flight {
+    id: ID!
+    flightNumber: String!
+    origin: String!
+    destination: String!
+    seatsAvailable: Int!
+    departureTime: String!
+    arrivalTime: String!
+    reservations: [Reservation!]!
+}
+
+type Reservation {
+    id: ID!
+    passengerName: String!
+    seatNumber: String!
+    reservationCode: String!
+    flight: Flight!
+}
+
+type Query {
+    allPaymentMethods: [PaymentMethod]
+    paymentMethodById(id: ID!): PaymentMethod
+    allPayments: [Payment]
+    paymentById(id: ID!): Payment
+}
+
+type PaymentMethod {
+    id: ID!
+    cardNumber: String!
+    cvv: String!
+    expirationDate: String!
+    cardHolderName: String!
+}
+
+type Payment {
+    id: ID!
+    reservation: Reservation!
+    paymentMethod: PaymentMethod!
+    amount: Float!
+    paymentStatus: String!
+}
+
+type Mutation {
+    reserveFlight(flightId: ID!, passengerName: String!, seatNumber: String!): Reservation
+    addFlight(flightNumber: String!, seatsAvailable: Int!, origin: String!, destination: String!,
+        departureTime: String!, arrivalTime: String!): Flight
+    addPaymentMethod(cardNumber: String!, cvv: String!, expirationDate: String!, cardHolderName: String!): PaymentMethod
+    payReservation(reservationId: ID!, paymentMethodId: ID!, amount: Float!): Payment
+}
+
+
