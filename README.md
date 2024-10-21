@@ -19,8 +19,7 @@ Asegúrate de tener instaladas las siguientes herramientas en tu sistema:
 Primero, clona este repositorio en tu máquina local:
 
 ```bash
-git clone https://github.com/usuario/proyecto-reservas-pagos.git
-cd proyecto-reservas-pagos
+git clone https://github.com/KevEstr/Grafana-Prometheus-Lab
 ```
 
 Instrucciones para Ejecución con Docker
