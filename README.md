@@ -1,4 +1,4 @@
-# Proyecto: API de Reservas y Pagos - Spring Boot + GraphQL
+# Proyecto: Spring Boot + GraphQL + Monitoreo (Prometheus y Grafana)
 
 ## Descripción del Proyecto
 
@@ -49,7 +49,7 @@ Prometheus estará ejecutándose en el puerto `9090`. Accede a través de:
 http://localhost:9090
 ```
 
-2. Grafana estará disponible en el puerto 3000. Como el proyecto es meramente académico, puedes utilizar las siguientes credenciales para iniciar sesión:
+2. Grafana estará disponible en el puerto `3000`. Como el proyecto es meramente académico, puedes utilizar las siguientes credenciales para iniciar sesión:
 
 - **Usuario**: `admin`
 - **Contraseña**: `admin`
