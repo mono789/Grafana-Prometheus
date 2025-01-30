@@ -19,7 +19,7 @@ Asegúrate de tener instaladas las siguientes herramientas en tu sistema:
 Primero, clona este repositorio en tu máquina local:
 
 ```bash
-git clone https://github.com/KevEstr/Grafana-Prometheus-Lab
+git clone https://github.com/mono789/Grafana-Prometheus
 ```
 
 Instrucciones para Ejecución con Docker
